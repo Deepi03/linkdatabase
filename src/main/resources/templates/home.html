@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:th="http://www.thymeleaf.org">
+ <head lang="en">
+        <meta charset="UTF-8" />
+        <title>Linkkitietokanta</title>
+        <!-- Latest compiled and minified CSS -->
+<!-- <link th:href = "@{/css/bootstrap.min.css}" rel="stylesheet"> -->
+<link  th:href="@{/css/layout.css}" rel="stylesheet">
+
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+    </head>
+    <body>
+        <h1 class="center">Links database</h1>
+        <h3 class="home center">Home page</h3>
+        <p class="center">From below drop down you can get to see the already added links with info and add new links</p>
+
+<div class="dropdown center">
+    <a class="btn btn-info dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-bs-toggle="dropdown" aria-expanded="false">
+     Select from menu
+    </a>
+  
+    <ul class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+      <li><a class="dropdown-item"th:href="@{/showlinks}"  title="directs to show links page">Show added links</a></li>
+      <li><a class="dropdown-item" th:href="@{/addlinks}" title="directs to add link page">Add new links</a></li>
+    
+    </ul>
+  </div>
+    </body>
+</html>
